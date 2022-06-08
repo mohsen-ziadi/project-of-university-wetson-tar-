@@ -19,3 +19,25 @@ function wetson() {
    }
    $("#w-result").html(wResult);
 }
+
+function tar(){
+   let tR1 = $("#t-R1").val();
+   let tR2 = $("#t-R2").val();
+   let tL1 = $("#t-L1").val();
+   let tL2 = $("#t-L2").val();
+   let tResult;
+   if (tR1 == "") {
+      tResult = tL1 / tL2 * tR2;
+      console.log(tResult);
+   } else if (tR2 == "") {
+      tResult = tL2 / tL1 * tR1;
+      console.log(tResult);
+   } else if (tL1 == "") {
+      tResult = tR1 / tR2 * tL2;
+      console.log(tResult);
+   } else if (tL2 == "") {
+      tResult = tR2 / tR1 * tL1;
+      console.log(tResult);
+   }
+   $("#t-result").html(tResult);
+}
