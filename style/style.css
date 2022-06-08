@@ -212,3 +212,23 @@ body{
     background-color: #1919c4;
 
 }
+
+#t-R1{
+    bottom: 135px;
+    left: 206px;
+}
+
+#t-R2{
+    bottom: 135px;
+    right: 220px;
+}
+
+#t-L1{
+    top: 110px;
+    left: 175px;
+}
+
+#t-L2{
+    top: 110px;
+    right: 130px;
+}
