@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>نرم افزار محاسبه مقاومت</title>
+</head>
+<body dir="rtl">
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <img src="images/University_of_Kashan_Logo.png" alt="">
+            </div>
+            <h2>دانشگاه کاشان</h2>
+            <h4>نرم افزار محاسبه مقاومت از طریق روابط پل تار و پل وتسون</h4>
+        </div>
+        <div id="box">
+            <button class="tab" id="wetson" onclick="openWetson()">
+                پل وتسون
+            </button>
+            <button class="tab tab-active" id="tar" onclick="openTar()">
+                پل تار
+            </button>
+            <div id="box-item">
+                <div class="item" id="wetson-item">
+                    <p>برای محاسبه مدار از طریق پل وتسون ابتدا مقدار مقاومت های مورد نظر زا وارد کنید، و مقدار مقاومت مجهول را خالی بگذارید. سپس بر روی دکمه محاسبه کلیک کنید.</p>
+                    <div id="circuitWet">
+                        <input type="number" id="w-R1" placeholder="R1">
+                        <input type="number" id="w-R2" placeholder="R2">
+                        <input type="number" id="w-R3" placeholder="R3">
+                        <input type="number" id="w-R4" placeholder="R4">
+                    </div>
+                    <span class="result">مقدار مقاومت:</span>
+                    <h4 class="result" id="w-result">*مقدار مقاومت هنوز حساب نشده است*</h4>
+                    <button id="buttonWetson" onclick=" wetson()">محاسبه</button>
+                    
+                </div>
+                <div class="item item-active" id="tar-item">
+                   <p>برای به دست آمدن مقدار مقاومت از طریق پل تار، مقادیر مورد نظر را وارد کنید. مقدار مجهول را خالی بگذارید.</p>
+                   <div id="circuitTar">
+                       <input type="number" id="t-R1" placeholder="R1">
+                       <input type="number" id="t-R2" placeholder="R2">
+                       <input type="number" id="t-L1" placeholder="L1">
+                       <input type="number" id="t-L2" placeholder="L2">
+                   </div>
+                   <span class="result">مقدار مقاومت:</span>
+                   <h4 class="result" id="t-result">*مقدار مقاومت هنوز حساب نشده است*</h4>
+                   <button id="buttonTar" onclick=" tar()">محاسبه</button>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <span>
+                تهیه شده توسط محسن زیادی 
+            </span>
+            <span>
+                <a href="https://wa.me/989373979783"><i class="fa fa-whatsapp"></i></a>
+            </span>
+
+        </div>
+    </div>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
